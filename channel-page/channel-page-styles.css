@@ -1,0 +1,88 @@
+.header-content-channel-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-mobile-author {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-mobile-author > h1 {
+    font-size: 12px;
+    line-height: 20px;
+    color: #19202C;
+}
+
+.channel-splash-mobile  {
+    position: relative;
+}
+
+.channel-splash-mobile > img {
+    width: 100vw;
+    object-fit: cover;
+    min-width: 290px;
+}
+.channel-avatar-mobile{
+    position: absolute;
+    bottom: -35px;
+    left: 16px;
+}
+.channel-page-mobile{
+    position: relative;
+}
+
+.channel-info {
+    margin: 37px 0;
+    padding-left: 16px;
+}
+
+.channel-info > h1 {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.channel-info > p {
+    font-size: 12px;
+    line-height: 15px;
+    color: #C2C2C2;
+}
+
+.channel-sections-mobile {
+    padding: 0 35px 22px 16px;
+}
+.channel-sections-mobile > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.selected-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #FF0000;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    .header-content-channel-mobile {
+        display: none;
+    }
+}
