@@ -60,7 +60,7 @@
 
 /* Desktop Styles Sidebar */
    .sidebar {
-       height: 100vh;
+       position: sticky;
        padding: 0 20px;
        font-size: 16px;
        line-height: 20px;
@@ -115,7 +115,7 @@
     align-items: center;
     gap: 13px;
     position: absolute;
-    bottom: -107px;
+    bottom: -100px;
     left: 20px;
 }
 
@@ -284,7 +284,6 @@ body {
 }
 
 .container {
-    height: 100vh;
     display: flex;
     z-index: -1;
     margin-top: 20px;
