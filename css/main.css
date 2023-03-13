@@ -29,11 +29,12 @@
 .search-input {
     display: flex;
     position: relative;
+    width: 830px;
 }
 
 .search-input > label > input {
     background: #EBEBEB;
-    width: 330px;
+    width: 830px;
     height: 22px;
     padding: 16px;
     mix-blend-mode: normal;
@@ -59,6 +60,7 @@
 
 /* Desktop Styles Sidebar */
    .sidebar {
+       height: 100vh;
        padding: 0 20px;
        font-size: 16px;
        line-height: 20px;
@@ -111,8 +113,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 70px;
     gap: 13px;
+    position: absolute;
+    bottom: -107px;
+    left: 20px;
+}
+
+.subscriptions {
+    position: relative;
 }
 
 .settings > p {
@@ -276,6 +284,7 @@ body {
 }
 
 .container {
+    height: 100vh;
     display: flex;
     z-index: -1;
     margin-top: 20px;
@@ -498,4 +507,10 @@ body {
         justify-content: flex-start;
         gap: 90px;
     }
+    .subscribe-button {
+        font-size: 16px;
+        width: 154px;
+        height: 40px;
+    }
+
 }
