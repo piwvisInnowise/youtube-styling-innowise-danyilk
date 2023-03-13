@@ -23,9 +23,9 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-right: 70px;
     position: relative;
     justify-self: flex-start;
+    padding-right: 70px;
 }
 
 .channel-splash > img {
