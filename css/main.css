@@ -126,9 +126,19 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    flex: 1;
 }
 
 .home-channel-videos {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    gap: 30px
+}
+
+.home-channel-videos-container{
+    position: absolute;
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -240,6 +250,7 @@ body {
     gap: 55px;
     align-items: center;
     display: flex;
+    margin-right: 70px;
 }
 
 
@@ -274,14 +285,38 @@ body {
 }
 
 .video {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 3px;
     margin-bottom: 30px;
 }
 
+.mobile-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-videos-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .video-preview {
+    width: 100%;
     position: relative;
+}
+
+.video-preview > img {
+    position: relative;
+}
+
+.video-preview-mobile {
+    width: 90vw;
 }
 
 .video-duration > img {
@@ -326,6 +361,14 @@ body {
     width: 100%;
     border-top: 1px solid #F1F1F1;
     padding-top: 14px;
+}
+
+.subscribe-button-outline {
+    color: #FF0000;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    background: none;
 }
 
 /* Mobile Styles Header */
@@ -383,6 +426,16 @@ body {
     .sidebar {
         display: none;
     }
+    .header-avatar {
+        margin-right: 0;
+    }
+    .video {
+        padding: 0 16px;
+    }
+    .video-preview > img {
+        width: 100%;
+        position: relative;
+    }
 
 }
 
@@ -406,6 +459,16 @@ body {
     .sidebar {
         display: none;
     }
+    .header-avatar {
+        margin-right: 0;
+    }
+    .video {
+        padding: 0 16px;
+    }
+    .video-preview > img {
+        width: 100%;
+        position: relative;
+    }
 
 }
 
@@ -421,7 +484,7 @@ body {
         display: none;
     }
     .main-header {
-        padding: 26px 20px;
+        padding: 26px 0 26px 20px ;
     }
     .mobile-content {
         display: none;
