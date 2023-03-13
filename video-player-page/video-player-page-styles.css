@@ -7,6 +7,63 @@
     align-items: center;
 }
 
+.video-header {
+    padding-top: 20px;
+}
+
+.player-description-desktop {
+    display: flex;
+    align-items: flex-start ;
+    justify-content: space-between;
+    border-top: 1px solid #F1F1F1;
+    padding: 38px 0;
+    margin-top: 20px;
+}
+
+.player-description-text-desktop > h1 {
+    font-size: 26px;
+    line-height: 33px;
+}
+
+.published-data {
+    font-size: 13px;
+    line-height: 16px;
+    color: #C2C2C2;
+    margin: 4px 0 14px 0;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+.show-more-button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    line-height: 25px;
+    color: #C2C2C2;
+    margin-top: 15px;
+}
+
+.video-actions-desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    line-height: 25px;
+    color: #C2C2C2;
+}
+
+.player-description-section-desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
 .header-mobile-author > h1 {
     font-size: 12px;
     line-height: 20px;
@@ -272,6 +329,8 @@
     background-color: rgba(256, 256, 256, 0.3);
 }
 
+
+
 .video-actions {
     display: flex;
     justify-content: center;
@@ -286,9 +345,74 @@
     gap: 200px;
 }
 
+.player-page-desktop {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.player-desktop {
+    padding-left: 70px;
+
+}
+
+.video-area {
+    position: relative;
+    width: 100%;
+}
+
+.video-area > img {
+    width: 100%;
+    position: relative;
+}
+
+.player-interface-desktop {
+    position: absolute;
+    display: flex;
+    bottom: 20px;
+    gap: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 33px;
+    flex-direction: column;
+}
+
+.player-interface-time-desktop {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.player-interface-buttons-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.player-interface-buttons-right-desktop {
+    display: flex;
+    gap: 40px
+}
+
+.player-interface-buttons-left-desktop {
+    display: flex;
+    gap: 40px
+}
+
 .channel-sections > ul {
     display: flex;
     gap: 69px
+}
+
+.channel-videos-desktop {
+    display: flex;
+    flex: 0;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 70px;
 }
 
 .channel-main-video {
@@ -396,7 +520,9 @@
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-
+    .player-page-desktop {
+        display: none;
+    }
 }
 
 /* Tablet Styles */
@@ -416,4 +542,18 @@
     .home-videos-mobile {
         display: none;
     }
+
+    .video-actions {
+        margin:  0;
+    }
+
+    .channel-video-autoplay-section > h1 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .channel-video-autoplay-section {
+        padding: 0;
+    }
+
 }
