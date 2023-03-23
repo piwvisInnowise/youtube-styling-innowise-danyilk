@@ -3,57 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Video Player Page</title>
-    <link href="../css/main.css" rel="stylesheet"/>
-    <link href="../css/toggle-checkbox.css" rel="stylesheet"/>
-    <link href="video-player-page-styles.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/toggle-checkbox.css" rel="stylesheet"/>
+    <link href="css/video-player-page-styles.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.typekit.net/ief6zhr.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
 <div class="page">
     <header class="main-header">
         <div class="header-content-mobile">
             <div class="logo-container">
-                <img src="../images/logo/Black.svg" style="width: 100%" alt="">
+                <img src="images/logo/Black.svg" style="width: 100%" alt="">
             </div>
             <div class="header-avatar">
-                <div class="image-container"><img src="../images/Shape.svg" alt=""></div>
-                <div class="image-container"><img src="../images/nav-elements/vertical-dots.svg" alt=""></div>
+                <div class="image-container"><img src="images/Shape.svg" alt=""></div>
+                <div class="image-container"><img src="images/nav-elements/vertical-dots.svg" alt=""></div>
             </div>
         </div>
         <div class="header-content-desktop">
             <div class="header-desktop-left-part">
                 <div class="header-left-elements">
-                    <div class="menu-icon-container">
-                        <img src="../images/nav-elements/Menu.svg" style="width: 100%" alt="">
-                    </div>
-                    <div class="logo-container">
-                        <img src="../images/logo/Black.svg" style="width: 100%" alt="">
-                    </div>
-                </div>
-                <div class="search-input">
-                    <label>
-                        <input placeholder="Search" type="text">
-                    </label>
-                    <div class="search-logo">
-                        <img src="../images/Shape.svg" style="width: 100%" alt="">
-                    </div>
+                    <button class="menu-icon-container svg-button nav-button">
+                        <img src="images/nav-elements/Menu.svg" alt="">
+                    </button>
+                    <button class="logo-container svg-button">
+                        <img src="images/logo/Black.svg" alt="">
+                    </button>
                 </div>
             </div>
+            <div class="search-input">
+                <input placeholder="Search" type="text">
+                <button class="search-button">
+                    <img src="images/Shape.svg" alt="">
+                </button>
+            </div>
             <div class="header-avatar">
-                <div>
-                    <img src="../images/header-elements/camera.svg" style="width: 27px" alt="">
+                <div class="header-elements">
+                    <button class="svg-button nav-button">
+                        <img src="images/header-elements/camera.svg" alt="">
+                    </button>
+                    <button class="svg-button nav-button">
+                        <img src="images/header-elements/dots.svg" alt="">
+                    </button>
+                    <button class="header-ring svg-button nav-button">
+                        <img src="images/header-elements/ring.svg" alt="">
+                        <div class="header-ring-notification">
+                            <img src="images/header-elements/ring-notification.svg" alt="">
+                            <p class="header-ring-notification-count"> 3</p>
+                        </div>
+
+                    </button>
                 </div>
-                <div>
-                    <img src="../images/header-elements/dots.svg" style="width: 21px" alt="">
-                </div>
-                <div class="header-ring">
-                    <img src="../images/header-elements/ring.svg" style="width: 22px" alt="">
-                    <div class="header-ring-notification">
-                        <img src="../images/header-elements/ring-notification.svg" style="width: 22px" alt="">
-                    </div>
-                    <p class="header-ring-notification-count"> 3</p>
-                </div>
-                <div class="image-container"><img src="../images/header-elements/Userpic.svg" alt=""></div>
+                <button class="image-container svg-button"><img src="images/header-elements/Userpic.svg" alt="">
+                </button>
             </div>
         </div>
     </header>
@@ -61,26 +64,42 @@
             <div class="player-page-desktop">
                 <div class="player-desktop">
                     <div class="video-area">
-                        <img src="../images/player-page/big-player.svg" alt="">
+                        <img src="images/player-page/big-player.svg" alt="">
                         <div class="player-interface-desktop">
                             <div class="player-interface-time-desktop">
                                 <p>1:34</p>
                                 <p>19:00</p>
                             </div>
-                            <img src="../images/player-page/progress-bar-desktop.svg" alt="">
+                            <img src="images/player-page/progress-bar-desktop.svg" alt="">
                             <div  class="player-interface-buttons-desktop">
                                 <div class="player-interface-buttons-left-desktop">
-                                    <img src="../images/player-page/pause-desktop.svg" alt=""><img src="../images/player-page/next.svg" alt="">
-                                    <img src="../images/player-page/volume-desktop.svg" alt="">
+                                    <button class="svg-button">
+                                        <img src="images/player-page/pause-desktop.svg" alt="">
+                                    </button>
+                                    <button  class="svg-button">
+                                        <img src="images/player-page/next.svg" alt="">
+                                    </button>
+                                    <button class="svg-button">
+                                        <img src="images/player-page/volume-desktop.svg" alt="">
+                                    </button>
                                 </div>
                                 <div class="player-interface-buttons-right-desktop">
-                                    <img src="../images/player-page/subtitles.svg" alt=""><img src="../images/player-page/settings.svg" alt="">
-                                    <img src="../images/player-page/size.svg" alt=""><img src="../images/player-page/full-screen.svg" alt="">
+                                    <button class="svg-button">
+                                        <img src="images/player-page/subtitles.svg" alt="">
+                                    </button>
+                                    <button  class="svg-button">
+                                        <img src="images/player-page/settings.svg" alt="">
+                                    </button>
+                                    <button  class="svg-button">
+                                        <img src="images/player-page/size.svg" alt="">
+                                    </button>
+                                    <button  class="svg-button">
+                                        <img src="images/player-page/full-screen.svg" alt="">
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <h1 class="video-header">
                         Dude You Re Getting A Telescope
                     </h1>
@@ -92,24 +111,27 @@
                             <ul class="video-actions">
                                 <li>
                                     <button class="video-action-button">
-                                        <img src="../images/player-page/like.svg" alt="">
+                                        <img src="images/player-page/like.svg" alt="">
                                         <p>123k</p>
                                     </button>
                                 </li>
                                 <li>
                                     <button class="video-action-button">
-                                        <img src="../images/player-page/dislike.svg" alt="">
+                                        <img src="images/player-page/dislike.svg" alt="">
                                         <p>435k</p>
                                     </button>
                                 </li>
                                 <li>
                                     <button class="video-action-button">
-                                        <img src="../images/player-page/share.svg" alt="">
+                                        <img src="images/player-page/share.svg" alt="">
                                         <p>Share</p>
                                     </button>
                                 </li>
                                 <li class="video-action-button" style="background: none; width: 50px">
-                                    <img src="../images/player-page/more.svg" alt="">
+                                    <button class="svg-button">
+                                        <img src="images/player-page/more.svg" alt="">
+                                    </button>
+
                                 </li>
                             </ul>
                         </div>
@@ -117,7 +139,7 @@
                     <div class="player-description-desktop">
                         <div class="player-description-section-desktop">
                             <div>
-                                <img src="../images/player-page/channel-avatar-big.svg" alt="">
+                                <img src="images/player-page/channel-avatar-big.svg" alt="">
                             </div>
                             <div class="player-description-text-desktop">
                                 <h1>
@@ -142,116 +164,118 @@
                 </div>
                 <div class="channel-videos-desktop">
                     <div class="channel-video-autoplay-section">
-                        <h1>
-                            Next
-                        </h1>
-                        <div class="channel-video-autoplay">
-                            <p>
-                                Autoplay
-                            </p>
-                            <div class="container-toggle">
-                                <label class="switch" for="checkbox">
-                                    <input type="checkbox" id="checkbox" />
-                                    <div class="slider round"></div>
-                                </label>
+                        <div>
+                            <h1>
+                                Next
+                            </h1>
+                            <div class="channel-video-autoplay">
+                                <p>
+                                    Autoplay
+                                </p>
+                                <div class="container-toggle">
+                                    <label class="switch" for="checkbox">
+                                        <input type="checkbox" id="checkbox" />
+                                        <div class="slider round"></div>
+                                    </label>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="video">
-                        <div class="video-preview">
-                            <img src="../images/player-page/player-preview-1.svg" alt="">
-                            <div class="video-duration">
-                                <img src="../images/video-duration-element/Rectangle.svg" alt="">
-                                <p>4:15</p>
+                        <a href="#" class="video">
+                            <div class="video-preview">
+                                <img src="images/player-page/player-preview-1.svg" alt="">
+                                <div class="video-duration">
+                                    <img src="images/video-duration-element/Rectangle.svg" alt="">
+                                    <p>4:15</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="video-description">
-                            <h1>A Brief History of Creation</h1>
-                            <div class="video-stats">
-                                <p>80k views • 3 days ago</p>
-                                <p>Dollie Blair</p>
+                            <div class="video-description">
+                                <h1>A Brief History of Creation</h1>
+                                <div class="video-stats">
+                                    <p>80k views • 3 days ago</p>
+                                    <p>Dollie Blair</p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="video">
-                        <div class="video-preview">
-                            <img src="../images/player-page/player-preview-2.svg" alt="">
-                            <div class="video-duration">
-                                <img src="../images/video-duration-element/Rectangle.svg" alt="">
-                                <p>4:15</p>
+                        </a>
+                        <a href="#" class="video">
+                            <div class="video-preview">
+                                <img src="images/player-page/player-preview-2.svg" alt="">
+                                <div class="video-duration">
+                                    <img src="images/video-duration-element/Rectangle.svg" alt="">
+                                    <p>4:15</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="video-description">
-                            <h1>A Brief History of Creation</h1>
-                            <div class="video-stats">
-                                <p>80k views • 3 days ago</p>
-                                <p>Dollie Blair</p>
+                            <div class="video-description">
+                                <h1>A Brief History of Creation</h1>
+                                <div class="video-stats">
+                                    <p>80k views • 3 days ago</p>
+                                    <p>Dollie Blair</p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="video">
-                        <div class="video-preview">
-                            <img src="../images/player-page/player-preview-3.svg" alt="">
-                            <div class="video-duration">
-                                <img src="../images/video-duration-element/Rectangle.svg" alt="">
-                                <p>4:15</p>
+                        </a>
+                        <a href="#" class="video">
+                            <div class="video-preview">
+                                <img src="images/player-page/player-preview-3.svg" alt="">
+                                <div class="video-duration">
+                                    <img src="images/video-duration-element/Rectangle.svg" alt="">
+                                    <p>4:15</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="video-description">
-                            <h1>A Brief History of Creation</h1>
-                            <div class="video-stats">
-                                <p>80k views • 3 days ago</p>
-                                <p>Dollie Blair</p>
+                            <div class="video-description">
+                                <h1>A Brief History of Creation</h1>
+                                <div class="video-stats">
+                                    <p>80k views • 3 days ago</p>
+                                    <p>Dollie Blair</p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="video">
-                        <div class="video-preview">
-                            <img src="../images/player-page/player-preview-1.svg" alt="">
-                            <div class="video-duration">
-                                <img src="../images/video-duration-element/Rectangle.svg" alt="">
-                                <p>4:15</p>
+                        </a>
+                        <a href="#" class="video">
+                            <div class="video-preview">
+                                <img src="images/player-page/player-preview-1.svg" alt="">
+                                <div class="video-duration">
+                                    <img src="images/video-duration-element/Rectangle.svg" alt="">
+                                    <p>4:15</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="video-description">
-                            <h1>A Brief History of Creation</h1>
-                            <div class="video-stats">
-                                <p>80k views • 3 days ago</p>
-                                <p>Dollie Blair</p>
+                            <div class="video-description">
+                                <h1>A Brief History of Creation</h1>
+                                <div class="video-stats">
+                                    <p>80k views • 3 days ago</p>
+                                    <p>Dollie Blair</p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="video">
-                        <div class="video-preview">
-                            <img src="../images/player-page/player-preview-1.svg" alt="">
-                            <div class="video-duration">
-                                <img src="../images/video-duration-element/Rectangle.svg" alt="">
-                                <p>4:15</p>
+                        </a>
+                        <a href="#" class="video">
+                            <div class="video-preview">
+                                <img src="images/player-page/player-preview-1.svg" alt="">
+                                <div class="video-duration">
+                                    <img src="images/video-duration-element/Rectangle.svg" alt="">
+                                    <p>4:15</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="video-description">
-                            <h1>A Brief History of Creation</h1>
-                            <div class="video-stats">
-                                <p>80k views • 3 days ago</p>
-                                <p>Dollie Blair</p>
+                            <div class="video-description">
+                                <h1>A Brief History of Creation</h1>
+                                <div class="video-stats">
+                                    <p>80k views • 3 days ago</p>
+                                    <p>Dollie Blair</p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="video">
-                        <div class="video-preview">
-                            <img src="../images/player-page/player-preview-2.svg" alt="">
-                            <div class="video-duration">
-                                <img src="../images/video-duration-element/Rectangle.svg" alt="">
-                                <p>4:15</p>
+                        </a>
+                        <a href="#" class="video">
+                            <div class="video-preview">
+                                <img src="images/player-page/player-preview-2.svg" alt="">
+                                <div class="video-duration">
+                                    <img src="images/video-duration-element/Rectangle.svg" alt="">
+                                    <p>4:15</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="video-description">
-                            <h1>A Brief History of Creation</h1>
-                            <div class="video-stats">
-                                <p>80k views • 3 days ago</p>
-                                <p>Dollie Blair</p>
+                            <div class="video-description">
+                                <h1>A Brief History of Creation</h1>
+                                <div class="video-stats">
+                                    <p>80k views • 3 days ago</p>
+                                    <p>Dollie Blair</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -261,15 +285,15 @@
             <div class="channel-page-mobile">
                 <div class="player-splash-mobile">
                     <div class="player">
-                        <img class="player-background" src="../images/player-page/player-splash.svg" alt="">
+                        <img class="player-background" src="images/player-page/player-splash.svg" alt="">
                         <div class="player-area">
-                            <img src="../images/player-page/shadow.svg" alt="">
+                            <img src="images/player-page/shadow.svg" alt="">
                             <div class="player-interface">
-                                    <img class="stop" src="../images/player-page/pause.svg" alt="">
+                                    <img class="stop" src="images/player-page/pause.svg" alt="">
                                     <p>1:34</p>
-                                    <img src="../images/player-page/progress-bar.svg" alt="">
+                                    <img src="images/player-page/progress-bar.svg" alt="">
                                     <p>-10:00</p>
-                                    <img class="volume" src="../images/player-page/volume.svg" alt="">
+                                    <img class="volume" src="images/player-page/volume.svg" alt="">
                             </div>
 
                         </div>
@@ -281,7 +305,7 @@
                         <p>123k views</p>
                     </div>
                     <div  class="player-info-arrow-mobile">
-                        <img src="../images/nav-elements/down-arrow.svg" alt="">
+                        <img src="images/nav-elements/down-arrow.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -289,19 +313,19 @@
                 <ul class="video-actions">
                     <li>
                         <button class="video-action-button">
-                            <img src="../images/player-page/like.svg" alt="">
+                            <img src="images/player-page/like.svg" alt="">
                             <p>123k</p>
                         </button>
                     </li>
                     <li>
                         <button class="video-action-button">
-                            <img src="../images/player-page/dislike.svg" alt="">
+                            <img src="images/player-page/dislike.svg" alt="">
                             <p>435k</p>
                         </button>
                     </li>
                     <li>
                         <button class="video-action-button">
-                            <img src="../images/player-page/share.svg" alt="">
+                            <img src="images/player-page/share.svg" alt="">
                             <p>Share</p>
                         </button>
                     </li>
@@ -310,7 +334,7 @@
             <div class="player-channel-mobile">
                 <div class="player-channel-info-mobile">
                     <div class="player-channel-info-section-mobile">
-                        <img src="../images/player-page/channel-avatar.svg" alt="">
+                        <img src="images/player-page/channel-avatar.svg" alt="">
                         <div class="player-channel-description-mobile">
                             <h1>
                                 Food & Drink
@@ -345,9 +369,9 @@
              </div>
             <div class="video">
                 <div class="video-preview">
-                    <img src="../images/video-previews/Cover.png" alt="">
+                    <img src="images/video-previews/Cover.png" alt="">
                     <div class="video-duration">
-                        <img src="../images/video-duration-element/Rectangle.svg" alt="">
+                        <img src="images/video-duration-element/Rectangle.svg" alt="">
                         <p>4:15</p>
                     </div>
                 </div>
@@ -361,9 +385,9 @@
             </div>
             <div class="video">
                 <div class="video-preview">
-                    <img src="../images/video-previews/cover-2.svg" alt="">
+                    <img src="images/video-previews/cover-2.svg" alt="">
                     <div class="video-duration">
-                        <img src="../images/video-duration-element/Rectangle.svg" alt="">
+                        <img src="images/video-duration-element/Rectangle.svg" alt="">
                         <p>4:15</p>
                     </div>
                 </div>
@@ -377,9 +401,9 @@
             </div>
             <div class="video">
                 <div class="video-preview">
-                    <img src="../images/video-previews/cover-3.svg" alt="">
+                    <img src="images/video-previews/cover-3.svg" alt="">
                     <div class="video-duration">
-                        <img src="../images/video-duration-element/Rectangle.svg" alt="">
+                        <img src="images/video-duration-element/Rectangle.svg" alt="">
                         <p>4:15</p>
                     </div>
                 </div>
@@ -393,9 +417,9 @@
             </div>
             <div class="video">
                 <div class="video-preview">
-                    <img src="../images/video-previews/Cover.png" alt="">
+                    <img src="images/video-previews/Cover.png" alt="">
                     <div class="video-duration">
-                        <img src="../images/video-duration-element/Rectangle.svg" alt="">
+                        <img src="images/video-duration-element/Rectangle.svg" alt="">
                         <p>4:15</p>
                     </div>
                 </div>
@@ -409,9 +433,9 @@
             </div>
             <div class="video">
                 <div class="video-preview">
-                    <img src="../images/video-previews/cover-2.svg" alt="">
+                    <img src="images/video-previews/cover-2.svg" alt="">
                     <div class="video-duration">
-                        <img src="../images/video-duration-element/Rectangle.svg" alt="">
+                        <img src="images/video-duration-element/Rectangle.svg" alt="">
                         <p>4:15</p>
                     </div>
                 </div>
@@ -425,9 +449,9 @@
             </div>
             <div class="video">
                 <div class="video-preview">
-                    <img src="../images/video-previews/cover-3.svg" alt="">
+                    <img src="images/video-previews/cover-3.svg" alt="">
                     <div class="video-duration">
-                        <img src="../images/video-duration-element/Rectangle.svg" alt="">
+                        <img src="images/video-duration-element/Rectangle.svg" alt="">
                         <p>4:15</p>
                     </div>
                 </div>
@@ -444,25 +468,25 @@
         <ul class="navigation-content-mobile">
             <li>
                 <div>
-                    <img src="../images/navigation/Home.svg" alt="">
+                    <img src="images/navigation/Home.svg" alt="">
                 </div>
                 <p class="nav-text">Home</p>
             </li>
             <li>
                 <div>
-                    <img src="../images/navigation/Trending.svg" alt="">
+                    <img src="images/navigation/Trending.svg" alt="">
                 </div>
                 <p class="nav-text">Trending</p>
             </li>
             <li>
                 <div>
-                    <img src="../images/navigation/Subscriptions.svg" alt="">
+                    <img src="images/navigation/Subscriptions.svg" alt="">
                 </div>
                 <p class="nav-text">Subscriptions</p>
             </li>
             <li>
                 <div>
-                    <img src="../images/navigation/Library.svg" alt="">
+                    <img src="images/navigation/Library.svg" alt="">
                 </div>
                 <p class="nav-text">Library</p>
             </li>

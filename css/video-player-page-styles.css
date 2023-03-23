@@ -9,6 +9,7 @@
 
 .video-header {
     padding-top: 20px;
+    font-size: var(--fs-600);
 }
 
 .player-description-desktop {
@@ -46,6 +47,7 @@
     line-height: 25px;
     color: #C2C2C2;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 .video-actions-desktop {
@@ -219,6 +221,7 @@
 
 .channel-video-autoplay-section {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 13px 16px;
 }
@@ -327,6 +330,7 @@
     border-style: none ;
     background-image: url("../images/player-page/button-grey.svg");
     background-color: rgba(256, 256, 256, 0.3);
+    cursor: pointer;
 }
 
 
@@ -349,7 +353,7 @@
     display: flex;
     flex: 1;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap: 40px;
 }
 
@@ -409,7 +413,6 @@
 
 .channel-videos-desktop {
     display: flex;
-    flex: 0;
     justify-content: center;
     flex-direction: column;
     padding-right: 70px;
@@ -527,8 +530,24 @@
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
+    .player-page-desktop {
+        flex-direction: column;
+    }
 
+    .player-desktop {
+        padding-left: 0;
+    }
 
+}
+
+@media only screen and (max-width: 1250px) {
+    .player-page-desktop {
+        flex-direction: column;
+        align-items: center;
+    }
+    .channel-videos-desktop {
+        width: 70%;
+    }
 }
 
 /* Desktop Styles */
