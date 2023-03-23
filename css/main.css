@@ -1,3 +1,16 @@
+:root {
+   --fs-400: 0.7rem;
+   --fs-600: 1.2rem;
+}
+
+@media (min-width: 40rem) {
+    :root {
+        --fs-400: 1rem;
+        --fs-600: 2rem;
+    }
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -16,25 +29,32 @@
 .header-left-elements {
     display: flex;
     gap: 28px;
+    width: 100%;
     align-items: center;
 
 }
 
 .header-desktop-left-part {
     display: flex;
-    gap: 60px;
+    gap: 40px;
+    flex-grow: 1;
     align-items: center;
+    max-width: 200px;
 }
 
 .search-input {
     display: flex;
     position: relative;
-    width: 830px;
+    justify-self: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-left: 40px;
+    flex: auto;
 }
 
-.search-input > label > input {
+.search-input input {
     background: #EBEBEB;
-    width: 830px;
+    width: 100%;
     height: 22px;
     padding: 16px;
     mix-blend-mode: normal;
@@ -44,8 +64,11 @@
 }
 
  input[type='text'] {
+     position: relative;
      font-size: 16px;
+     flex-grow: 1;
      line-height: 20px;
+     max-width: 836px;
      color: #30384C;
      mix-blend-mode: normal;
      opacity: 0.4;
@@ -54,6 +77,8 @@
 .header-elements {
      display: flex;
      justify-content: space-between;
+    align-items: center;
+    gap: 55px;
 }
 
 /* Desktop Styles Header */
@@ -135,15 +160,24 @@
     align-items: flex-start;
     flex-direction: column;
     flex: 1;
+
+}
+
+.channel-videos-header {
+    display: flex;
+    justify-content: space-between;
 }
 
 .home-channel-videos {
     position: relative;
 
+    justify-content: flex-start;
     display: flex;
+    align-items: center;
     flex-direction: row;
     gap: 30px
 }
+
 
 .home-channel-videos-container{
     position: absolute;
@@ -159,6 +193,11 @@
     justify-content: space-between;
     gap: 10px;
     right: 148px;
+}
+
+.recommended-channel-nav-buttons {
+    display: flex;
+    gap: 10px;
 }
 
 .video-nav-buttons-subscribe {
@@ -182,7 +221,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    align-self: flex-start;
+    justify-content: center;
+    width: 100%;
 }
 
 /* Desktop Styles Container */
@@ -191,10 +231,12 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    font-size: 26px;
+    font-size: var(--fs-600);
     line-height: 33px;
     color: #19202C;
     font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .recommended-label {
@@ -205,6 +247,7 @@ body {
 }
 
 .recommendations {
+    font-size: var(--fs-400);
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -212,7 +255,8 @@ body {
 
 .recommended-videos{
     display: flex;
-    gap: 40px
+    gap: 40px;
+    justify-content: center;
 }
 
 /* Desktop Styles Container */
@@ -225,16 +269,16 @@ body {
 .header-ring-notification {
     position: absolute;
     bottom: 12px;
-    left: 5px;
+    left: 15px;
 }
 
 .header-ring-notification-count {
     position: absolute;
-    bottom: 18px;
-    left: 13px;
+    bottom: 0.29em;
+    left: 7px;
     font-size: 12px;
     line-height: 15px;
-    color: #FFFFFF;
+    color: white;
 }
 
 
@@ -242,6 +286,49 @@ body {
     width: 100%;
 }
 
+.svg-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.svg-link {
+    gap: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.svg-link > span {
+    align-self: center;
+}
+
+.svg-link > p {
+    align-self: center;
+}
+
+
+
+.nav-button {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-button:hover {
+    background: gray;
+}
+
+
+.nav-button img {
+
+}
 
 .main-header {
     position: sticky;
@@ -251,16 +338,15 @@ body {
     width: 100%;
     padding: 10px 16px;
     background: #FFFFFF;
-
 }
 
 .header-avatar {
     gap: 55px;
-    align-items: center;
     display: flex;
+    grid-auto-flow: column;
     margin-right: 70px;
+    margin-left: 20px;
 }
-
 
 .subscribe-button-mobile {
     padding: 0 0 32px 16px;
@@ -275,13 +361,17 @@ body {
     border-style: none;
     font-size: 12px;
     line-height: 15px;
+    cursor: pointer;
 }
 
-.search-logo {
-    position: absolute;
-    right: 17px;
-    bottom: 4px;
+.search-button {
+    position: relative;
+    border: none;
+    background: none;
+    right: 40px;
+    cursor: pointer;
 }
+
 
 .container {
     display: flex;
@@ -293,11 +383,13 @@ body {
 }
 
 .video {
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 3px;
     margin-bottom: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
 .mobile-content {
@@ -321,6 +413,7 @@ body {
 
 .video-preview > img {
     position: relative;
+    width: 100%;
 }
 
 .video-preview-mobile {
@@ -401,6 +494,13 @@ body {
     padding-bottom: 5px;
 }
 
+.home-recommended-author-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--fs-400);
+}
+
 .nav-text {
     font-size: 10px;
     line-height: 13px;
@@ -448,36 +548,60 @@ body {
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 400px) and (max-width: 960px) {
     body {
-        background-color: #F5CF8E;
+        background-color: white;
     }
+    .mobile-content {
+        display: none;
+    }
+
+    .header-elements {
+        gap: 20px;
+    }
+
+    .header-avatar {
+        gap: 20px;
+    }
+
+    .video-nav-buttons-subscribe {
+        margin-top: 55px;
+    }
+
+    .videos-nav-buttons {
+        right: 50px;
+    }
+
     .navigation-content-mobile {
         display: none;
     }
-    .header-content-desktop {
-        display: none;
+
+    input[type='text'] {
+        visibility: hidden;
     }
-    .header-content-desktop {
-        display: none;
-    }
-    .desktop-content {
+
+    .header-content-mobile {
         display: none;
     }
     .sidebar {
         display: none;
     }
-    .header-avatar {
-        margin-right: 0;
-    }
-    .video {
-        padding: 0 16px;
-    }
-    .video-preview > img {
-        width: 100%;
-        position: relative;
+    .container {
+        align-items: flex-start;
+        padding: 0 26px 0 26px;
     }
 
+
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1250px) {
+    .sidebar {
+        display: none;
+    }
+
+    .container {
+        padding: 0 26px 0 26px;
+    }
 }
 
 /* Desktop Styles */
