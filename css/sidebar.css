@@ -1,0 +1,88 @@
+.sidebar {
+    position: sticky;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 58px;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+
+.sidebar-nav > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar-nav > ul > li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px
+}
+
+
+.subscriptions > h1 {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 30px ;
+}
+
+.subscriptions > ul > li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px
+}
+
+.subscriptions > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.settings {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+    position: absolute;
+    bottom: -100px;
+    left: 20px;
+}
+
+.subscriptions {
+    position: relative;
+}
+
+.settings > p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #C2C2C2;
+}
+
+@media only screen and (max-width: 400px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 960px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1250px) {
+    .sidebar {
+        display: none;
+    }
+}

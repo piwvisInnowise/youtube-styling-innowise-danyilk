@@ -1,0 +1,43 @@
+.recommended-channel-nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.video-nav-buttons-subscribe {
+    gap: 50px;
+}
+
+.recommendations {
+    font-size: var(--fs-400);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.recommended-videos {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.recommended-label {
+    font-size: 16px;
+    line-height: 20px;
+    color: #C2C2C2;
+    font-weight: 400;
+}
+
+.video-nav-buttons-subscribe > p {
+    position: absolute;
+    right: 135px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 960px) {
+    .video-nav-buttons-subscribe {
+        margin-top: 55px;
+    }
+}

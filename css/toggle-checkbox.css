@@ -48,5 +48,8 @@ input:checked + .slider:before {
 }
 
 .container-toggle {
+    display: flex;
     margin: 0 auto;
+    gap: 10px;
+    align-items: center;
 }

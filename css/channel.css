@@ -178,7 +178,7 @@
 .channel-recommendations-author{
     display: flex;
     flex-direction: row;
-    font-size: 18px;
+    font-size: var(--fs-400);
     line-height: 23px;
     color: #19202C;
     gap: 20px;
@@ -246,7 +246,10 @@
 
     mix-blend-mode: normal;
     opacity: 0.6;
+}
 
+.subscribe-button-mobile {
+    padding: 0 0 32px 16px;
 }
 
 
@@ -278,7 +281,7 @@
     }
 
     .channel-splash {
-        padding-right: 0;
+        padding: 0 26px 0 26px;
     }
 
     .video-info {
@@ -293,6 +296,17 @@
         display: none;
     }
 
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1250px) {
+
+    .container {
+        padding: 0 26px 0 26px;
+    }
+
+    .video-info {
+        padding-top: 0;
+    }
 }
 
 /* Desktop Styles */

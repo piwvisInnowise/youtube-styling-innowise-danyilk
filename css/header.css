@@ -1,0 +1,107 @@
+.header-content-desktop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left-elements {
+    display: flex;
+    gap: 28px;
+    width: 100%;
+    align-items: center;
+
+}
+
+.header-desktop-left-part {
+    display: flex;
+    gap: 40px;
+    flex-grow: 1;
+    align-items: center;
+    max-width: 200px;
+}
+
+.header-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 55px;
+}
+
+.main-header {
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    padding: 10px 16px;
+    background: #FFFFFF;
+}
+
+.header-avatar {
+    gap: 55px;
+    display: flex;
+    grid-auto-flow: column;
+    margin-right: 70px;
+    margin-left: 20px;
+}
+
+.header-content-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header Ring Notifications */
+
+.header-ring {
+    position: relative;
+}
+
+.header-ring-notification {
+    position: absolute;
+    bottom: 12px;
+    left: 15px;
+}
+
+.header-ring-notification-count {
+    position: absolute;
+    bottom: 0.29em;
+    left: 7px;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+}
+
+
+@media only screen and (max-width: 400px) {
+    .header-content-desktop {
+        display: none;
+    }
+
+    .header-avatar {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 960px) {
+    .header-elements {
+        gap: 20px;
+    }
+
+    .header-avatar {
+        gap: 20px;
+    }
+
+    .header-content-mobile {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 961px) {
+    .header-content-mobile {
+        display: none;
+    }
+    .main-header {
+        padding: 26px 0 26px 20px ;
+    }
+}
