@@ -1,6 +1,6 @@
 :root {
-   --fs-400: 0.7rem;
-   --fs-600: 1.2rem;
+    --fs-400: 0.7rem;
+    --fs-600: 1.2rem;
 }
 
 @media (min-width: 40rem) {
@@ -10,7 +10,6 @@
     }
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -19,148 +18,15 @@
     list-style-type: none;
 }
 
-/* Desktop Styles Header */
-
-.header-content-desktop {
-    display: flex;
-    justify-content: space-between;
+body {
+    overflow-x: hidden;
 }
-
-.header-left-elements {
-    display: flex;
-    gap: 28px;
-    width: 100%;
-    align-items: center;
-
-}
-
-.header-desktop-left-part {
-    display: flex;
-    gap: 40px;
-    flex-grow: 1;
-    align-items: center;
-    max-width: 200px;
-}
-
-.search-input {
-    display: flex;
-    position: relative;
-    justify-self: flex-start;
-    align-items: center;
-    width: 100%;
-    padding-left: 40px;
-    flex: auto;
-}
-
-.search-input input {
-    background: #EBEBEB;
-    width: 100%;
-    height: 22px;
-    padding: 16px;
-    mix-blend-mode: normal;
-    opacity: 0.3;
-    border-radius: 22px;
-    border: none;
-}
-
- input[type='text'] {
-     position: relative;
-     font-size: 16px;
-     flex-grow: 1;
-     line-height: 20px;
-     max-width: 836px;
-     color: #30384C;
-     mix-blend-mode: normal;
-     opacity: 0.4;
- }
-
-.header-elements {
-     display: flex;
-     justify-content: space-between;
-    align-items: center;
-    gap: 55px;
-}
-
-/* Desktop Styles Header */
-
-/* Desktop Styles Sidebar */
-   .sidebar {
-       position: sticky;
-       padding: 0 20px;
-       font-size: 16px;
-       line-height: 20px;
-       display: flex;
-       flex-direction: column;
-       align-self: flex-start;
-       gap: 58px;
-   }
-
-   .sidebar-nav {
-       display: flex;
-       flex-direction: column;
-       gap: 65px;
-   }
-
-   .sidebar-nav > ul {
-       display: flex;
-       flex-direction: column;
-       gap: 15px;
-   }
-
-     .sidebar-nav > ul > li {
-      display: flex;
-       flex-direction: row;
-       align-items: center;
-       gap: 13px
-   }
-
-    .subscriptions > h1 {
-        font-size: 18px;
-        line-height: 23px;
-        margin-bottom: 30px ;
-    }
-
-.subscriptions > ul > li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 13px
-}
-
-.subscriptions > ul {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.settings {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 13px;
-    position: absolute;
-    bottom: -100px;
-    left: 20px;
-}
-
-.subscriptions {
-    position: relative;
-}
-
-.settings > p {
-    font-size: 16px;
-    line-height: 20px;
-    color: #C2C2C2;
-}
-/* Desktop Styles Sidebar */
 
 .desktop-content {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     flex: 1;
-
 }
 
 .channel-videos-header {
@@ -170,7 +36,6 @@
 
 .home-channel-videos {
     position: relative;
-
     justify-content: flex-start;
     display: flex;
     align-items: center;
@@ -178,8 +43,7 @@
     gap: 30px
 }
 
-
-.home-channel-videos-container{
+.home-channel-videos-container {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -193,28 +57,6 @@
     justify-content: space-between;
     gap: 10px;
     right: 148px;
-}
-
-.recommended-channel-nav-buttons {
-    display: flex;
-    gap: 10px;
-}
-
-.video-nav-buttons-subscribe {
-    gap: 50px;
-}
-
-.video-nav-buttons-subscribe > p {
-    position: absolute;
-    right: 135px;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-body {
-    overflow-x: hidden;
 }
 
 .channel-videos {
@@ -239,48 +81,7 @@ body {
     cursor: pointer;
 }
 
-.recommended-label {
-    font-size: 16px;
-    line-height: 20px;
-    color: #C2C2C2;
-    font-weight: 400;
-}
-
-.recommendations {
-    font-size: var(--fs-400);
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.recommended-videos{
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-}
-
 /* Desktop Styles Container */
-
-
-.header-ring {
-    position: relative;
-}
-
-.header-ring-notification {
-    position: absolute;
-    bottom: 12px;
-    left: 15px;
-}
-
-.header-ring-notification-count {
-    position: absolute;
-    bottom: 0.29em;
-    left: 7px;
-    font-size: 12px;
-    line-height: 15px;
-    color: white;
-}
-
 
 .image-container {
     width: 100%;
@@ -312,7 +113,6 @@ body {
 }
 
 
-
 .nav-button {
     border-radius: 50%;
     width: 40px;
@@ -323,33 +123,6 @@ body {
 
 .nav-button:hover {
     background: gray;
-}
-
-
-.nav-button img {
-
-}
-
-.main-header {
-    position: sticky;
-    position: -webkit-sticky;
-    z-index: 1;
-    top: 0;
-    width: 100%;
-    padding: 10px 16px;
-    background: #FFFFFF;
-}
-
-.header-avatar {
-    gap: 55px;
-    display: flex;
-    grid-auto-flow: column;
-    margin-right: 70px;
-    margin-left: 20px;
-}
-
-.subscribe-button-mobile {
-    padding: 0 0 32px 16px;
 }
 
 .subscribe-button {
@@ -382,16 +155,6 @@ body {
     align-items: center;
 }
 
-.video {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    margin-bottom: 30px;
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-}
-
 .mobile-content {
     width: 100%;
     display: flex;
@@ -406,53 +169,6 @@ body {
     flex-direction: column;
 }
 
-.video-preview {
-    width: 100%;
-    position: relative;
-}
-
-.video-preview > img {
-    position: relative;
-    width: 100%;
-}
-
-.video-preview-mobile {
-    width: 90vw;
-}
-
-.video-duration > img {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
-
-.video-duration > p {
-    position: absolute;
-    font-size: 14px;
-    line-height: 18px;
-    bottom: 12px;
-    right: 19px;
-    color: #FFFFFF;
-}
-
-.video-description {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-}
-
-.video-description > h1 {
-    font-size: 16px;
-    line-height: 20px;
-}
-
-.video-stats {
-    display: flex;
-    justify-content: space-between;
-    font-size: 13px;
-    line-height: 16px;
-    color: #C2C2C2;
-}
 
 .navigation {
     position: -webkit-sticky;
@@ -472,14 +188,6 @@ body {
     background: none;
 }
 
-/* Mobile Styles Header */
-.header-content-mobile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-/* Mobile Styles Navigation */
-
 .navigation-content-mobile {
     display: flex;
     list-style-type: none;
@@ -487,6 +195,7 @@ body {
     align-content: space-evenly;
     text-align: center;
 }
+
 .navigation-content-mobile > li {
     display: flex;
     flex-direction: column;
@@ -498,7 +207,8 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: var(--fs-400);
+    line-height: 33px;
+    font-size: var(--fs-600);
 }
 
 .nav-text {
@@ -508,38 +218,29 @@ body {
 }
 
 .home-videos-mobile:last-child {
-  padding-bottom: 40px;
+    padding-bottom: 40px;
 }
 
-.nav-image  {
+.nav-image {
     width: 100%;
 }
 
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-    body {
-        background-color: white;
-    }
+
     .navigation-content-desktop {
         display: none;
     }
 
-    .header-content-desktop {
-        display: none;
-    }
     .desktop-content {
         display: none;
     }
-    .sidebar {
-        display: none;
-    }
-    .header-avatar {
-        margin-right: 0;
-    }
+
     .video {
         padding: 0 16px;
     }
+
     .video-preview > img {
         width: 100%;
         position: relative;
@@ -549,23 +250,9 @@ body {
 
 /* Tablet Styles */
 @media only screen and (min-width: 400px) and (max-width: 960px) {
-    body {
-        background-color: white;
-    }
+
     .mobile-content {
         display: none;
-    }
-
-    .header-elements {
-        gap: 20px;
-    }
-
-    .header-avatar {
-        gap: 20px;
-    }
-
-    .video-nav-buttons-subscribe {
-        margin-top: 55px;
     }
 
     .videos-nav-buttons {
@@ -576,28 +263,24 @@ body {
         display: none;
     }
 
-    input[type='text'] {
-        visibility: hidden;
-    }
-
-    .header-content-mobile {
-        display: none;
-    }
-    .sidebar {
-        display: none;
-    }
     .container {
         align-items: flex-start;
+    }
+
+    .home-videos-mobile {
+        display: none;
+    }
+
+    .channel-videos {
         padding: 0 26px 0 26px;
     }
 
-
+    .recommendations {
+        padding: 0 26px 0 26px;
+    }
 }
 
 @media only screen and (min-width: 960px) and (max-width: 1250px) {
-    .sidebar {
-        display: none;
-    }
 
     .container {
         padding: 0 26px 0 26px;
@@ -606,30 +289,26 @@ body {
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-    body {
-        background-color: white;
-    }
+
     .navigation-content-mobile {
         display: none;
     }
-    .header-content-mobile {
-        display: none;
-    }
-    .main-header {
-        padding: 26px 0 26px 20px ;
-    }
+
     .mobile-content {
         display: none;
     }
+
     footer {
         display: none;
     }
+
     .container {
         flex-direction: row;
         z-index: 1;
         justify-content: flex-start;
         gap: 90px;
     }
+
     .subscribe-button {
         font-size: 16px;
         width: 154px;

@@ -22,7 +22,7 @@
 }
 
 .player-description-text-desktop > h1 {
-    font-size: 26px;
+    font-size: var(--fs-600);
     line-height: 33px;
 }
 
@@ -221,7 +221,6 @@
 
 .channel-video-autoplay-section {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     padding: 13px 16px;
 }

@@ -5,7 +5,11 @@
     <title>Video Player Page</title>
     <link href="css/main.css" rel="stylesheet"/>
     <link href="css/toggle-checkbox.css" rel="stylesheet"/>
-    <link href="css/video-player-page-styles.css" rel="stylesheet"/>
+    <link href="css/video-player.css" rel="stylesheet"/>
+    <link href="css/header.css" rel="stylesheet"/>
+    <link href="css/search-input.css" rel="stylesheet"/>
+    <link href="css/sidebar.css" rel="stylesheet"/>
+    <link href="css/video.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.typekit.net/ief6zhr.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
@@ -13,9 +17,9 @@
 <div class="page">
     <header class="main-header">
         <div class="header-content-mobile">
-            <div class="logo-container">
+            <a href="index.html" class="logo-container svg-link">
                 <img src="images/logo/Black.svg" style="width: 100%" alt="">
-            </div>
+            </a>
             <div class="header-avatar">
                 <div class="image-container"><img src="images/Shape.svg" alt=""></div>
                 <div class="image-container"><img src="images/nav-elements/vertical-dots.svg" alt=""></div>
@@ -27,9 +31,9 @@
                     <button class="menu-icon-container svg-button nav-button">
                         <img src="images/nav-elements/Menu.svg" alt="">
                     </button>
-                    <button class="logo-container svg-button">
+                    <a href="index.html" class="logo-container svg-link">
                         <img src="images/logo/Black.svg" alt="">
-                    </button>
+                    </a>
                 </div>
             </div>
             <div class="search-input">
@@ -164,15 +168,14 @@
                 </div>
                 <div class="channel-videos-desktop">
                     <div class="channel-video-autoplay-section">
-                        <div>
                             <h1>
                                 Next
                             </h1>
                             <div class="channel-video-autoplay">
-                                <p>
-                                    Autoplay
-                                </p>
                                 <div class="container-toggle">
+                                    <p>
+                                        Autoplay
+                                    </p>
                                     <label class="switch" for="checkbox">
                                         <input type="checkbox" id="checkbox" />
                                         <div class="slider round"></div>
@@ -289,11 +292,19 @@
                         <div class="player-area">
                             <img src="images/player-page/shadow.svg" alt="">
                             <div class="player-interface">
+                                <button class="svg-button">
                                     <img class="stop" src="images/player-page/pause.svg" alt="">
+                                </button>
+
                                     <p>1:34</p>
+                                <button class="svg-button">
                                     <img src="images/player-page/progress-bar.svg" alt="">
+                                </button>
                                     <p>-10:00</p>
+                                <button class="svg-button">
                                     <img class="volume" src="images/player-page/volume.svg" alt="">
+                                </button>
+
                             </div>
 
                         </div>
@@ -467,28 +478,28 @@
     <footer class="navigation">
         <ul class="navigation-content-mobile">
             <li>
-                <div>
+                <button class="svg-button" >
                     <img src="images/navigation/Home.svg" alt="">
-                </div>
-                <p class="nav-text">Home</p>
+                    <p class="nav-text">Home</p>
+                </button>
             </li>
             <li>
-                <div>
+                <button class="svg-button">
                     <img src="images/navigation/Trending.svg" alt="">
-                </div>
-                <p class="nav-text">Trending</p>
+                    <p class="nav-text">Trending</p>
+                </button>
             </li>
             <li>
-                <div>
+                <button class="svg-button">
                     <img src="images/navigation/Subscriptions.svg" alt="">
-                </div>
-                <p class="nav-text">Subscriptions</p>
+                    <p class="nav-text">Subscriptions</p>
+                </button>
             </li>
             <li>
-                <div>
+                <button class="svg-button">
                     <img src="images/navigation/Library.svg" alt="">
-                </div>
-                <p class="nav-text">Library</p>
+                    <p class="nav-text">Library</p>
+                </button>
             </li>
         </ul>
     </footer>
